@@ -3,167 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mayank Prasher</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+	<!-- <link href="./bootstrap-5.2.3-dist/css/bootstrap.min.css"> -->
 </head>
 <body onload="typeWriter()">
-<div class="floating-window">
-	<span>Hey, please open this on your laptop responsive version is in making👀</span>
+<header class="nav-bar container id="navbar">
+<a href="#about" style="text-decoration: none;"><h3 class="logo">Mayank.</h3></a>
+<nav class="nav-links">
+	<ul>
+		<!-- <li class="about-link"><a href="#about">About</a></li> -->
+		<li class="skills-link"><a href="#skills">Skills</a></li>
+		<li class="projects-link"><a href="#projects">Projects</a></li>
+		<li class="contact-link"><a href="#contact">Contact</a></li>
+	</ul>
+</nav>
+</header>
+<main>
+<section class="container about-section" data-bs-spy="scroll" data-bs-target="#navbar" data-offset="10" tabindex="0" id="about">
+<div class="about-content">
+<span>My name is</span><br>
+<h1>Mayank Prasher</h1>
+<h1 id="demo"></h1>
 </div>
-<div class="container-fluid main-window">
-    <div class="navbar-hi" id="navbar">
-        <ul class="nav-links">
-            <li><a href="#about"><span class="text-center about-link">About</span></a></li>
-            <li><a href="#skills"><span class="text-center skills-link">Skills</span></a></li>
-            <li><a href="#projects"><span class="text-center projects-link">Projects</span></a></li>
-            <li><a href="#contact"><span class="text-center contact-link">Contact</span></a></li>
-        </ul>
-    </div> 
-<div class="main-container"data-bs-spy="scroll" data-bs-target="#navbar" data-offset="10" tabindex="0" id="about">
-		<div class="about-section">
-        <div class="about">
-            <div class="description">
-               <div class="name-div">
-                <span style="font-size:24px;">My name is</span><br>
-                <h1>Mayank Prasher</h1>
-                 </div>
-               <div class="profession-div">
-                <h1 id="demo"></h1>
-                 </div>
-            </div>
-        </div>
-		<div class="profile-pic">
-			<div class="profile-pic-div ">
-			</div>
-		</div>
-		
-        </div>
-		<div class="skills-section" id="skills">
-			<div class="skill-partition">
-				<div class="skill-part">
-					<div class="skill"><object data="images/c.svg" height="100px" width="100px" style="position: relative; top:48px;left:68px;"></object>
-						<span style="position: relative; top:68px;">C++</span>
-					</div>
-					<div class="skill">
-						<object data="images/java-4.svg"  height="100px" width="100px" style="position: relative; top:48px;left:68px;"></object>
-						<span style="position: relative; top:68px;">Java</span>
-					</div>
-				</div>
-				<div class="skill-part">
-					<div class="skill text-center align-content-center pb-5">
-						<object data="images/nodejs.svg" height="100px" width="100px" style="position: relative; top:56px;left:33px;"></object>
-						<span style="position: relative; top:24px;right:50px;">Node.js</span>
-					</div>
-					<div class="skill">
-						<object data="images/mongodn.svg" height="100px" width="100px"  style="position: relative; top:42px;left:65px;"></object>
-						<span style="position: relative; top:68px; right:20px;">MongoDb</span>
-					</div>
-				</div>
-			</div>
-			<div class="skill-circle-holder">
-				<div class="skill-circle">
-					SKILLS
-				</div>
-			</div>
-			<div class="skill-partition">
-				<div class="skill-part">
-					<div class="skill">
-						<object data="images/react-2.svg" height="100px" width="100px"  style="position: relative; top:50px;left:65px;"></object>
-						<span style="position: relative; top:65px; right:8px;">React</span>
-					</div>
-					<div class="skill">
-						<object data="images/typescript.svg" height="100px" width="100px" style="position: relative; top:50px;left:65px;"></object>
-						<span style="position: relative; top:68px; right:25px;">TypeScript</span>
-					</div>
-				</div>
-				<div class="skill-part">
-					<div class="skill">
-						<object data="images/graphql-logo-2.svg"  height="100px" width="100px" style="position: relative; top:50px;left:65px;"></object>
-						<span style="position: relative; top:68px; right:20px;">GraphQl</span>
-					</div>
-					<div class="skill">
-						<object data="images/github-mark.svg" height="100px" width="100px" style="position: relative; top:50px;left:65px; border-radius: 50%;"></object>
-						<span style="position: relative; top:68px; right:12px;">Github</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="skills-section projects-section mb-3" id="projects">
-			<div class="skill-partition project-partition">
-				<div class="skill-part project-part">
-					<div class="skill project">
-						<img src="./images/pos.png" alt="">
-                     <div class="project-caption border">
-                     <span class="caption">Point-on-Sale<br>Inventory Management System</span>
-					 </div>
-					</div>
-					<div class="skill project">
-						<img src="./images/fdp.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">Faculty development programme<br>Webpage</span>
-						</div>
-					</div>
-				</div>
-				<div class="skill-part project-part">
-					<div class="skill project">
-						<img src="./images/electrofy.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">Electrofy<br>E-commerce website</span>
-						</div>
-						
-					</div>
-					<div class="skill project">
-						<img src="./images/offer.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">Offer Tag Generator</span>
-						</div>
+<div class="about-profile-pic">
+	<div class="profile-pic-square">
+    <img src="profile-pic.jpg" alt="">
+	</div>
+</div>
+</section>
+<section class="container skill-section"data-bs-spy="scroll" data-bs-target="#navbar" data-offset="10" tabindex="0" id="skills">
+	<div class="skill-heading"><h1>Skills</h1> <button class="btn">CONTACT ME</button></div>
+	<div class="skills-grid">
+		<article>
+			<object data="images/c.svg" height="100px" width="100px"></object>
+			<span>C++</span>
+		</article>
+		<article>
+			<object data="images/java-4.svg"  height="100px" width="100px"></object>
+			<span>Java</span>
+		</article>
+		<article>
+<object data="images/nodejs.svg" height="100px" width="100px"></object>
+		<span>Node.js</span>
+		</article>
+		<article>
+<object data="images/mongodn.svg" height="100px" width="100px"></object>
+	<span>MongoDb</span>
+		</article>
+		<article><object data="images/react-2.svg" height="100px" width="100px"></object>
+		<span>React</span></article>
+		<article>
+			<object data="images/typescript.svg" height="100px" width="100px"></object>
+			<span>TypeScript</span>
+		</article>
+		<article><object data="images/django.svg"  height="100px" width="100px"></object>
+		<span>django</span></article>
+		<article>
+			<object data="images/php.svg" height="100px" width="100px"></object>
+			<span>PHP</span>
+		</article>
+	</div>
+</section>
 
-					</div>
-				</div>
-			</div>
-			<div class="skill-circle-holder">
-				<div class="skill-circle project-circle">
-					PROJECTS
-				</div>
-			</div>
-			<div class="skill-partition project-partition">
-				<div class="skill-part project-part">
-					<div class="skill project">
-						<img src="./images/ration.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">EasyRation.<br>Digitalization of Indian FPS System</span>
-						</div>
+<section class="container projects-section" data-bs-spy="scroll" data-bs-target="#navbar" data-offset="10" tabindex="0" id="projects">
+<div class="project-heading"><h1>Projects</h1> <button class="btn">GITHUB <i class="fa-brands fa-github"></i></button></div>
+<div class="projects-grid">
+	<article><img src="./images/pos.png" alt="">
+	<span>Inventory POS</span>
+	<span class="skills-icon-span">
+     <object data="./images/php.svg"></object>
+	</span>
+</article>
+	
+	<article><img src="./images/fdp.png" alt="">
+	<span>FDP website</span>
+<span class="skills-icon-span">
+     <object data="./images/php.svg"></object>
+	</span>
+</article>
+	
+	<article>
+		<img src="./images/electrofy.png" alt="">
+		<span>Electrofy</span>
+		<span class="skills-icon-span">
+     <object data="./images/react-2.svg"></object>
+	 <object data="./images/nodejs.svg"></object>
+	 <object data="./images/mongodb-icon-1.svg"></object>
+	</span>
+	</article>
+	<article>
+		<img src="./images/offer.png" alt="">
+		<span>Offer Tag Generator</span>
+		<span class="skills-icon-span">
+     <object data="./images/nodejs.svg"></object>
+	</span>
+	</article>
+	<article>
+		<img src="./images/ration.png" alt="">
+		<span>EasyRation</span>
+		<span class="skills-icon-span">
+     <object data="./images/nodejs.svg"></object>
+	 <object data="./images/mongodb-icon-1.svg"></object>
+	</span>
+	</article>
+	<article>
+		<img src="./images/boule.png" alt="">
+		<span>Boulevard Website</span>
+		<span class="skills-icon-span">
+     <object data="./images/react-2.svg"></object>
+	</span>
+	</article>
+	<article>
+		<img src="./images/todo.png" alt="">
+		<span>To-do List</span>
+		<span class="skills-icon-span">
+     <object data="./images/react-2.svg"></object>
+     <object data="./images/django.svg"></object>
+	</span>
+	</article>
+</div>
+</section>
+<section class="container contact-section" id="contact" data-bs-spy="scroll" data-bs-target="#navbar" data-offset="10" tabindex="0" id="contact">
 
-					</div>
-					<div class="skill project">
-						<img src="./images/boule.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">Boulevard<br>Single-Page Website</span>
-						</div>
-
-					</div>
-				</div>
-				<div class="skill-part project-part">
-					<div class="skill project">
-						<img src="./images/news.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">College News Portal<br>(Django Based)</span>
-						</div>
-
-					</div>
-					<div class="skill project">
-						<img src="./images/todo.png" alt="">
-						<div class="project-caption border">
-							<span class="caption">To-do<br>(Django-based)</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contact-section" id="contact">
-             <div class="contact-part text-center">
-				<span class="text-white text-center"><h1>Let's talk about projects &#128075</h1></span>
+<div class="contact-part text-center">
+				<span class="formHeading text-center"><h1>Contact&#128075</h1></span>
                 <p>Send message through this form or connect with me on these social media platforms. Let's make something cool together.
 				</p>
 				<div class="social-icon">
@@ -175,7 +141,7 @@
 				</a>
 				</div>
 			 </div>
-             <div class="contact">
+			 <div class="contact">
 				<form method="POST" id="form">
 					<input type="hidden" name="access_key" value="974c7e3a-e887-44de-b70c-6e2c5d87e8da">
 					<input type="hidden" name="subject" value="New Submission from Web3Forms">
@@ -190,9 +156,9 @@
 					<span id="result"></span>
 				  </form>
 			 </div>
-		</div>
- </div>	
-</div>
+</section>
+</main>
+
 <script>
 	const form = document.getElementById('form');
 const result = document.getElementById('result');
@@ -234,9 +200,11 @@ form.addEventListener('submit', function(e) {
 });
 </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	<script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js">	</script>
+	<script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js">	</script>
     <!-- <script>
         var i = 0;
         var txt = 'A Web Developer';
@@ -251,6 +219,7 @@ form.addEventListener('submit', function(e) {
         }
         </script> -->
         <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+        
         <script>
             new TypeIt("#demo", { 
     lifeLike: false, 
