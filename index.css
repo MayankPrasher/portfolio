@@ -252,14 +252,17 @@ z-index: 1; */
         grid-template-columns: 1fr;
     }
     .about-content{
+        font-size: 24px;
+    }
+    .about-content h1{
         font-size: 28px;
     }
     .about-profile-pic{
         align-items: first baseline;
     }
     .profile-pic-square{
-        width: 225px;
-        height: 225px;
+        width: 200px;
+        height: 215px;
     }
     .skill-heading , .project-heading{
         margin-bottom: 20px;
